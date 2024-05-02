@@ -13,7 +13,7 @@ class CreateOrderIdColumnOrdersTable extends Migration
      */
     public function up()
     {
-        Schema::create('ekpay_orders', function (Blueprint $table) {
+        Schema::table('ekpay_orders', function (Blueprint $table) {
             $table->string('order_id')->nullable();
         });
     }
@@ -25,7 +25,7 @@ class CreateOrderIdColumnOrdersTable extends Migration
      */
     public function down()
     {
-        Schema::create('ekpay_orders', function (Blueprint $table) {
+        Schema::table('ekpay_orders', function (Blueprint $table) {
             $table->dropColumn('order_id');
         });
     }

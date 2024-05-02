@@ -1,6 +1,6 @@
 {
     "name": "sayeed/payment-by-ekpay",
-    "description": "Payment by SSL Ekpay",
+    "description": "The package offers straightforward installation instructions, ensuring that developers can quickly set up Ekpay payment gateway within their Laravel projects. Its empowers developers to seamlessly integrate Ekpay's payment services into their Laravel applications",
     "type": "library",
     "license": "MIT",
     "authors": [

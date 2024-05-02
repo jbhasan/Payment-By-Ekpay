@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOrderIdColumnOrdersTable extends Migration
+class AddColumnEkpayOrdersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateOrderIdColumnOrdersTable extends Migration
      */
     public function up()
     {
-        Schema::table('ekpay_orders', function (Blueprint $table) {
+		Schema::table('ekpay_orders', function (Blueprint $table) {
             $table->string('order_id')->nullable();
         });
     }

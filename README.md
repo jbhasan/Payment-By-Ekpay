@@ -54,10 +54,10 @@ Submit your request to `/ekpay/pay` route with params:
 -   customer_name
 -   customer_email
 -   customer_mobile
+-   order_id
 -   product_name
 -   customer_address [optional]
 -   customer_country [optional]
--   order_id [optional]
 
 See example in `resources/views/ekpay_example.blade.php`
 

@@ -67,6 +67,7 @@ class EkpayController extends Controller
         DB::table('ekpay_orders')
             ->where('transaction_id', $post_data['trns_info']['trnx_id'])
             ->updateOrInsert([
+                'order_id' => $post_data['trns_info']['ord_id'],
                 'name' => $post_data['cust_info']['cust_name'],
                 'email' => $post_data['cust_info']['cust_email'],
                 'phone' => $post_data['cust_info']['cust_mobo_no'],

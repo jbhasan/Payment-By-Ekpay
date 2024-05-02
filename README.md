@@ -57,6 +57,7 @@ Submit your request to `/ekpay/pay` route with params:
 -   product_name
 -   customer_address [optional]
 -   customer_country [optional]
+-   order_id [optional]
 
 See example in `resources/views/ekpay_example.blade.php`
 

@@ -1,0 +1,30 @@
+{
+    "name": "sayeed/payment-by-ekpay",
+    "description": "Payment by SSL Ekpay",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md. Hasan Sayeed",
+            "email": "jbhasan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework":">=8.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sayeed\\PaymentByEkpay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sayeed\\PaymentByEkpay\\Providers\\PaymentByEkpayServiceProvider"
+            ]
+        }
+    }
+}
